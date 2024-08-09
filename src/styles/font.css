@@ -1,9 +1,11 @@
 /* for some reason, we need to re-declare this at the .cm-line level, since the declaration on .markdown-source-view.mod-cm6 .cm-scroller doesn't pick up the --font-text style */
 
+.markdown-preview-view.fountain p:not(:is(.fountain-synopsis)) {
+	font-family: var(--fountain--font-family);
+}
+
 .markdown-source-view.mod-cm6.fountain {
-	.cm-line[class*="cm-fountain-"]:not(
-			:is(.cm-fountain-synopsis, .cm-fountain-section)
-		) {
+	.cm-line[class*="cm-fountain-"]:not(:is(.cm-fountain-synopsis, .cm-fountain-section)) {
 		font-family: var(--fountain--font-family);
 	}
 }

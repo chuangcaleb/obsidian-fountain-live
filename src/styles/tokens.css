@@ -1,40 +1,61 @@
+.markdown-preview-view.fountain,
 .markdown-source-view.mod-cm6.fountain {
+	blockquote {
+		padding: 0;
+		border: none;
+	}
+
 	/* ----------------------------- main tokens ------------------------------ */
 
+	.fountain-scene-heading,
 	.cm-fountain-scene-heading {
 		font-weight: var(--font-bold);
 	}
 
+	.fountain-parenthetical,
+	.fountain-character-extension,
+	.fountain-lyrics,
 	.cm-fountain-parenthetical,
 	.cm-fountain-character-extension,
 	.cm-fountain-lyrics {
 		font-style: italic;
 	}
 
+	.fountain-transition,
 	.cm-fountain-transition {
 		font-weight: var(--font-bold);
 		text-align: right;
 	}
 
+	.fountain-centered,
 	.cm-fountain-centered {
 		font-weight: var(--font-bold);
 		text-align: center;
 	}
 
+	.fountain-character,
 	.cm-fountain-character {
 		padding-left: var(--fountain-character-left);
 		padding-right: var(--fountain-character-right);
+		margin-block-end: 0;
 	}
 
+	.fountain-lyrics,
+	.fountain-dialogue,
 	.cm-fountain-lyrics,
 	.cm-fountain-dialogue {
 		padding-left: var(--fountain-dialogue-left);
 		padding-right: var(--fountain-dialogue-right);
+		margin-block-start: 0;
+		margin-block-end: 0;
 	}
 
+	.fountain-parenthetical,
 	.cm-fountain-parenthetical {
 		padding-left: var(--fountain-parenthesis-left);
 		padding-right: var(--fountain-parenthesis-right);
+		margin-block-start: 0;
+		margin-block-end: 0;
 	}
 
 	/* ----------------------------- formatting ------------------------------- */
@@ -54,6 +75,11 @@
 		}
 
 		.cm-fountain-formatting-centered {
+			visibility: hidden;
+			display: inherit;
+		}
+
+		.cm-fountain-formatting-dialogue {
 			visibility: hidden;
 			display: inherit;
 		}

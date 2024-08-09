@@ -136,6 +136,11 @@ export function buildDecorations(view: EditorView): DecorationSet {
 					markDeco(charExtStart, lTo, "cm-fountain-character-extension");
 				}
 			}
+			if (token === n.dialogue) {
+				if (firstChar === "\\") {
+					markDeco(lFrom, lFrom + 1, composeFClass(token));
+				}
+			}
 			if (token === n.centered && lastChar === "<") {
 				markDeco(lTo - 1, lTo, composeFClass(token));
 			}

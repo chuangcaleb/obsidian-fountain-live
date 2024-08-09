@@ -5,6 +5,7 @@ Adapted from
 But ahh, still looks weird. I'm eyeballing values based on comparing the styling with images of printed-out familiar screenplays
 */
 
+.markdown-preview-view.fountain,
 .markdown-source-view.mod-cm6.fountain {
 	/*
 	"max" width is to expand to the maximum width of the editor (default)
@@ -28,7 +29,7 @@ But ahh, still looks weird. I'm eyeballing values based on comparing the styling
 	--fountain--parenthesis-left-factor: 1.5;
 	--fountain--parenthesis-right-factor: 1.1;
 
-	--fountain--font-family: "Courier New", "Courier", monospace;
+	--fountain--font-family: "Courier Prime", "Courier", monospace;
 
 	--fountain--fixed-line-width-base: 1in;
 
